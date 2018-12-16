@@ -35,7 +35,7 @@
 // no performance loss.  However, you can define LUA_DWORD_ALIGNED_TVALUES and
 // this will force 16 byte TValues on FP builds.
 
-//#define LUA_NUMBER_INTEGRAL
+#define LUA_NUMBER_INTEGRAL
 //#define LUA_DWORD_ALIGNED_TVALUES
 
 
@@ -92,7 +92,7 @@
 
 //#define CLIENT_SSL_ENABLE
 //#define MD2_ENABLE
-#define SHA2_ENABLE
+//#define SHA2_ENABLE
 #define SSL_BUFFER_SIZE 5120
 
 
@@ -145,14 +145,14 @@
 // append the last 3 octets of the MAC address.  Note that the total
 // Hostname MUST be 32 chars or less.
 
-//#define WIFI_STA_HOSTNAME "NodeMCU"
-//#define WIFI_STA_HOSTNAME_APPEND_MAC
+#define WIFI_STA_HOSTNAME "ChristmasTree-"
+#define WIFI_STA_HOSTNAME_APPEND_MAC
 
 
 // If you use the enduser_setup module, then you can also set the default
 // SSID when this module is running in AP mode.
 
-#define ENDUSER_SETUP_AP_SSID "SetupGadget"
+#define ENDUSER_SETUP_AP_SSID "ChristmasTree"
 
 
 // The following sections are only relevent for those developers who are
